@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Libraries"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:id="@+id/txt_title"
+        android:textColor="@color/purple_700"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/edit_url"
+            android:hint="Enter URL to show image"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getImage"
+            android:id="@+id/btn_get"
+            android:text="GET"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/img_picasso"/>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:showOutline="true"
+        app:roundedCorners="true"
+        android:text="Check Version"
+        android:onClick="btnCheckVersion"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Version"
+        android:onClick="btnCheckVersion"
+       />
+
+</LinearLayout>
